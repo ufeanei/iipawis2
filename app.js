@@ -1,9 +1,11 @@
 const express = require('express');
        var path = require('path');
-
        var app = express();
+
+const port=process.env.PORT || 3000
+       
        app.set("view engine", "ejs");
-     app.use(express.static('public'));
+       app.use(express.static('public'));
 
 app.get("/", function(req, res){
 	res.render("home", {title: "Welcome to IIPAWIS" })
@@ -60,5 +62,5 @@ app.get("/nodecourse", function(req, res){
 	res.render("nodecourse", {title: "Web Development with Node certificate"}) 
 });
 
-app.listen(3000);
+app.listen(port);
 
