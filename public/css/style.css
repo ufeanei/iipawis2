@@ -51,7 +51,8 @@ Import CSS and Google Fonts
 ================================
 */
 
-@import url(../css/font-awesome.min.css);
+/*@import url(../css/font-awesome.min.css);*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
 @import url(../css/owl.carousel.min.css);
 @import url(../css/owl.theme.default.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:500,600,700");
